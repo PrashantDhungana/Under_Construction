@@ -2,15 +2,6 @@
 <html dir="ltr">
 
 <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXGCJ08TSS"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-PXGCJ08TSS');
-    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +18,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./nth.png">
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,10 +32,10 @@
         width: 100%;
     }
     .text-nth{
-        color : #d53a33;
+        color : #00A547;
     }
     .error-title{
-        text-shadow: 4px 4px 0 #fff, 4px 8px 0 #11142d!important;
+        text-shadow: 4px 4px 0 #fff, 4px 8px 0 #1297C6!important;
         line-height: normal!important;
         font-size: 120px!important;
     }
@@ -83,43 +76,13 @@
 </head>
 
 <body>
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100875082446768");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
     <div class="main-wrapper">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5 mx-auto">
-                    <img src="./nth.png" alt="Nakhatra" height="100" width="100" class="mt-5 mb-3">
+                    <img src="./nth.png" alt="Nakhatra" height="200" width="200" class="mt-5">
                     <h1 class="error-title text-nth mx-auto mb-2">Under Construction... </h1>
-                    <h3 class="text-uppercase error-subtitle nth-gray">We are coming soon! Be ready for Tech Revolution</h3>
+                    <h3 class="text-uppercase error-subtitle nth-gray">We are coming soon! <i class="fas fa-lightbulb fa-2x" id="bulb" style="color: #00A547;"></i></h3>
                     <!-- <p class="text-muted m-t-30 m-b-30">YOU SEEM TO BE TRYING TO FIND HIS WAY HOME</p>
                     <a href="index.html" class="btn btn-danger btn-rounded waves-effect waves-light m-b-40 text-white">Back to home</a> -->
                 </div>
@@ -128,6 +91,17 @@
         </div>       
     </div>
     <script>
+        var bulb = document.getElementById('bulb');
+
+        // toggle between two icons every second
+        setInterval(function() {
+            // Remove class
+            $('#bulb').toggleClass('fas fa-lightbulb');
+            $('#bulb').toggleClass('far fa-lightbulb');
+        }, 1000);
+
+    </script>
+    <!-- <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Apr 30, 2022 17:00:00").getTime();
 
@@ -158,7 +132,7 @@
             document.getElementById("demo").innerHTML = "HURRAY!!!! WE ARE LIVE!";
           }
         }, 1000);
-    </script>
+    </script> -->
 </body>
 
 </html>
