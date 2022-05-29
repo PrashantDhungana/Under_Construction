@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXGCJ08TSS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PXGCJ08TSS');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Flexy lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Flexy admin lite design, Flexy admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Flexy Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Nakshatra Techno Hub</title>
+    <!-- <link rel="canonical" href="https://www.wrappixel.com/templates/Flexy-admin-lite/" /> -->
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./nth.png">
+    <!-- Custom CSS -->
+    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<style>
+    body{
+        width: 100%;
+    }
+    .text-nth{
+        color : #d53a33;
+    }
+    .error-title{
+        text-shadow: 4px 4px 0 #fff, 4px 8px 0 #11142d!important;
+        line-height: normal!important;
+        font-size: 120px!important;
+    }
+    .nth-gray{
+        color: #4B4C50;
+    }
+    .error-box{
+        width: 100%;
+    }
+    .error-body{
+        width: 100%;
+    }
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .error-title{
+        font-size: 80px !important;
+    }
+
+}
+   /* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .error-title{
+        font-size: 40px !important;
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .error-title{
+        font-size: 50px !important;
+        text-shadow: 4px 4px 0 #fff, 4px 5px 0 #11142d !important;
+    }
+}
+</style>
+</head>
+
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100875082446768");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5 mx-auto">
+                    <img src="./nth.png" alt="Nakhatra" height="100" width="100" class="mt-5 mb-3">
+                    <h1 class="error-title text-nth mx-auto mb-2">Under Construction... </h1>
+                    <h3 class="text-uppercase error-subtitle nth-gray">We are coming soon! Be ready for Tech Revolution</h3>
+                    <!-- <p class="text-muted m-t-30 m-b-30">YOU SEEM TO BE TRYING TO FIND HIS WAY HOME</p>
+                    <a href="index.html" class="btn btn-danger btn-rounded waves-effect waves-light m-b-40 text-white">Back to home</a> -->
+                </div>
+            </div>
+           <h1 id="demo" class="text-center" style="color: #EC2412; font-weight: 700; font-size: 50px;"></h1>
+        </div>       
+    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Apr 30, 2022 17:00:00").getTime();
+
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            //GIF for hurray
+            document.getElementById("demo").innerHTML = "HURRAY!!!! WE ARE LIVE!";
+          }
+        }, 1000);
+    </script>
+</body>
+
+</html>
